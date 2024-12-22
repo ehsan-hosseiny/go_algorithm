@@ -1,4 +1,4 @@
-package main
+package howmanyrabbit
 
 import "fmt"
 
@@ -14,12 +14,12 @@ import "fmt"
 */
 
 func main() {
-   var years int
-   fmt.Scanln(&years)
-   r := 7
-   // Calculate the rabbit population
-   for i:=0;i<years;i++{
-     r = r*2
-   }
-   fmt.Println(s)
+	var years int
+	fmt.Scanln(&years)
+	r := 7
+	// Calculate the rabbit population
+	for i := 0; i < years; i++ {
+		r = r * 2
+	}
+	fmt.Println(r)
 }

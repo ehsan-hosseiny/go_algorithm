@@ -1,4 +1,4 @@
-package main
+package ageonmars
 
 import "fmt"
 
@@ -15,21 +15,21 @@ import "fmt"
 	42
 
 	Sample Output:
-	22 
+	22
 */
 
 func main() {
-    var age int
-    fmt.Scanln(&age)
+	var age int
+	fmt.Scanln(&age)
 
-    mars := mars_age(age)
-    fmt.Println(mars)
+	mars := mars_age(age)
+	fmt.Println(mars)
 }
 
-func mars_age(age int)int{
-    marsYear := 687.0
-    earthYear := 365.0
+func mars_age(age int) int {
+	marsYear := 687.0
+	earthYear := 365.0
 
-    marsAge := float64(age) * earthYear / marsYear
-    return int(marsAge)
+	marsAge := float64(age) * earthYear / marsYear
+	return int(marsAge)
 }
