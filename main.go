@@ -3,13 +3,11 @@ package main
 import (
 	"fmt"
 
-	romantointeger "github.com/ehsan-hosseiny/algorythm/roman_to_integer"
+	LongestCommonPrefix "github.com/ehsan-hosseiny/algorythm/longest_common_prefix"
 )
 
 func main() {
-	
-	fmt.Println(romantointeger.RomanToInt("III"))     // Output: 3
-	fmt.Println(romantointeger.RomanToInt("LVII"))    // Output: 57
-	fmt.Println(romantointeger.RomanToInt("MCMXCIV")) // Output: 1994
+	strs1 := []string{"flower", "flow", "flight"}
+	fmt.Println(LongestCommonPrefix.LongestCommonPrefix(strs1))
 
 }
