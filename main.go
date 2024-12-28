@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	LongestCommonPrefix "github.com/ehsan-hosseiny/algorythm/longest_common_prefix"
+	ValidParantheses "github.com/ehsan-hosseiny/algorythm/valid_parantheses"
 )
 
 func main() {
-	strs1 := []string{"flower", "flow", "flight"}
-	fmt.Println(LongestCommonPrefix.LongestCommonPrefix(strs1))
+	d := ValidParantheses.IsValid("[]")
+	fmt.Println(d)
 
 }
