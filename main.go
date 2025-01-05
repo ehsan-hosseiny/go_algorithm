@@ -3,15 +3,15 @@ package main
 import (
 	"fmt"
 
-	findfirstoccurrence "github.com/ehsan-hosseiny/algorythm/find_index_first_occurrence"
+	searchinsertposition "github.com/ehsan-hosseiny/algorythm/search_insert_position"
 )
 
 func main() { // Create two linked lists
 
-	haystack2 := "leetcodeleet"
-	needle2 := "le"
+	nums := []int{1, 3, 5, 6}
+	target := 7
 
-	indices2 := findfirstoccurrence.StrStr(haystack2, needle2)
-	fmt.Println(indices2) // Output: []
+	index := searchinsertposition.SearchInsert(nums, target) // Pass the correct arguments
+	fmt.Println(index)                                       // Outputs: 2
 
 }
