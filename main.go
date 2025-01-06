@@ -3,15 +3,12 @@ package main
 import (
 	"fmt"
 
-	searchinsertposition "github.com/ehsan-hosseiny/algorythm/search_insert_position"
+	lengthOfLastWorld "github.com/ehsan-hosseiny/algorythm/length_of_last_world"
 )
 
-func main() { // Create two linked lists
-
-	nums := []int{1, 3, 5, 6}
-	target := 7
-
-	index := searchinsertposition.SearchInsert(nums, target) // Pass the correct arguments
-	fmt.Println(index)                                       // Outputs: 2
+func main() {
+	fmt.Println(lengthOfLastWorld.LengthOfLastWord("Hello World"))                 // Output: 5
+	fmt.Println(lengthOfLastWorld.LengthOfLastWord("   fly me   to   the moon  ")) // Output: 4
+	fmt.Println(lengthOfLastWorld.LengthOfLastWord("luffy is still joyboy"))       // Output: 6
 
 }
