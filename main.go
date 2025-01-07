@@ -3,12 +3,18 @@ package main
 import (
 	"fmt"
 
-	lengthOfLastWorld "github.com/ehsan-hosseiny/algorythm/length_of_last_world"
+	plusOne "github.com/ehsan-hosseiny/algorythm/plus_one"
 )
 
 func main() {
-	fmt.Println(lengthOfLastWorld.LengthOfLastWord("Hello World"))                 // Output: 5
-	fmt.Println(lengthOfLastWorld.LengthOfLastWord("   fly me   to   the moon  ")) // Output: 4
-	fmt.Println(lengthOfLastWorld.LengthOfLastWord("luffy is still joyboy"))       // Output: 6
+
+	// Example usage:
+	digits1 := []int{1, 2, 3}
+	digits2 := []int{4, 3, 2, 1}
+	digits3 := []int{9}
+
+	fmt.Println(plusOne.PlusOne(digits1)) // Output: [1, 2, 4]
+	fmt.Println(plusOne.PlusOne(digits2)) // Output: [4, 3, 2, 2]
+	fmt.Println(plusOne.PlusOne(digits3)) // Output: [1, 0]
 
 }
