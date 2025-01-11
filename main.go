@@ -3,18 +3,19 @@ package main
 import (
 	"fmt"
 
-	plusOne "github.com/ehsan-hosseiny/algorythm/plus_one"
+	sqrt "github.com/ehsan-hosseiny/algorythm/sqrt"
 )
 
 func main() {
 
 	// Example usage:
-	digits1 := []int{1, 2, 3}
-	digits2 := []int{4, 3, 2, 1}
-	digits3 := []int{9}
+	
 
-	fmt.Println(plusOne.PlusOne(digits1)) // Output: [1, 2, 4]
-	fmt.Println(plusOne.PlusOne(digits2)) // Output: [4, 3, 2, 2]
-	fmt.Println(plusOne.PlusOne(digits3)) // Output: [1, 0]
+	fmt.Println(sqrt.MySqrt(4))  // Output: 2
+	fmt.Println(sqrt.MySqrt(8))  // Output: 2
+	fmt.Println(sqrt.MySqrt(0))  // Output: 0
+	fmt.Println(sqrt.MySqrt(1))  // Output: 1
+	fmt.Println(sqrt.MySqrt(16)) // Output: 4
+	fmt.Println(sqrt.MySqrt(24)) // Output: 4
 
 }
